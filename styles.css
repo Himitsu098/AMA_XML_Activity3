@@ -78,7 +78,6 @@ body {
 }
 /*------------------------------------------------*/
 .samples{
-
     background-color: #281549;
 }
 .samples-container{
@@ -117,11 +116,6 @@ body {
     margin-top: 25px;
     font-weight: 800;
 }
-
-
-
-
-
 body.modal-open {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -132,3 +126,24 @@ body.modal-open {
     padding: 10px;
     border-radius: 8px;
 }
+.more-sample{
+    padding: 30px 0 60px;
+    display: flex;
+    justify-content: center
+}
+.more-sample > a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #004aad;
+    font-size: 20px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 30px 0 50px;
+}
+.more-sample > a:hover {
+    background-color: #0066cc; /* Slightly lighter shade of blue */
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+  
