@@ -37,11 +37,7 @@ body {
     width: 100px;
     border-radius: 50%;
 }
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse{
-        justify-content: flex-end;
-    }
-}
+
 /*------------------------------------------------*/
 .background-container{
     max-height: 768px;
@@ -98,14 +94,6 @@ body {
 .samples .image-container{
     height: 518px;
     
-}
-@media (max-width: 1199px) {
-    .samples .image-container {
-      height: calc(100vh - 480px);
-    }
-    .samples{
-        gap: 15px;
-    }
 }
 .samples .image-container img{
     height: 100%;
@@ -192,14 +180,6 @@ footer a:hover {
     height: 470px; /* Fixed height for uniformity */
     object-fit: cover; /* Ensure aspect ratio is preserved */
 }
-@media (max-width: 1199px) {
-    .product-card .image-container {
-        height: calc(33.57vw); /* 470 / 1200 * 100 */
-    }
-    .product-card .image-container img{
-        height: calc(33.57vw); 
-    }
-}
 .card-title h5 {
     text-align: center;
     font-size: 18px;
@@ -223,7 +203,6 @@ footer a:hover {
     flex-grow: 1; /* Allow it to grow and take remaining space */
     min-height: 100px;
 }
-/* Ensure Price and Release Year are aligned at the same height */
 .product-card p {
     margin: 5px 0;
 }
@@ -232,11 +211,9 @@ footer a:hover {
     justify-content: center;
     align-items: flex-start;
 }
-/* Optional: Add some spacing between product cards */
 .product-card {
     margin-bottom: 15px;
 }
-/* Bootstrap grid for 3 items per row */
 .product-card p {
     padding-left: 15px; 
 }
@@ -262,9 +239,152 @@ aside{
     display: flex;
     flex-direction: row;
 }
+.modal-product a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #cf0d4e;
+    font-weight: 800;
+    font-size: 26px;
+    padding: 12px 60px;
+    border-radius: 25px;
+    display: block;
+    width: max-content;
+}
+.btn-close {
+    filter: invert(1);
+}
+.team-members-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap
+}
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px 20px 30px;
+    border-radius: 25px;
+    max-width: 30%;
+    background-color: #281549;
+    color: #ffffff;
+}
+.member-card h3{
+    font-weight: 600;
+}
+.team-members .image-container {
+    border-radius: 50%;
+}
+.team-members > .team-members-content > .member-card > .image-container > img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team-members {
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.about-banner{
+    background-color: #281549;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 50px 0 75px;
+}
+.who, .mission{
+    background-color: #281549;
+    color: #ffffff;
+    padding: 75px 0 0;
+}
+.mission{
+    padding-bottom: 75px;
+}
+.who h2,
+.mission h2{
+    font-weight: 800;
+    text-align: center;
+}
+.mission-content,
+.who-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.who-text{
+    padding-right: 75px;
+}
+.mission-text{
+    padding-left: 75px;
+}
+.who-content > div{
+    width: 50%;
+}
+.who-image {
+    display: flex;
+    justify-content: center;
+}
+.who-image img{
+    max-width: 595px;
+    height: 595px;
+    object-fit: cover;
+    border-radius: 75px;
+}
+.who, .mission {
+    background-color: #281549;
+    color: #ffffff;
+    padding: 75px 0 0;
+}
+.mission {
+    padding-bottom: 75px;
+}
+.who h2,
+.mission h2 {
+    font-weight: 800;
+    text-align: center;
+}
+.who-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.who-text {
+    padding-right: 75px;
+}
+
+/* ======================================================
+   Media Queries
+   ====================================================== */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1199px) {
+    .samples .image-container {
+      height: calc(100vh - 480px);
+    }
+    .samples{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .product-card .image-container {
+        height: calc(33.57vw);
+    }
+    .product-card .image-container img{
+        height: calc(33.57vw); 
+    }
+}
 
 /* ================= Responsive Enhancements ================= */
-
 /* Breakpoint for screens <= 1200px */
 @media (max-width: 1200px) {
     .modal-dialog {
@@ -314,140 +434,7 @@ aside{
         flex-direction: column !important;
     }
 }
-.modal-product a{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #cf0d4e;
-    font-weight: 800;
-    font-size: 26px;
-    padding: 12px 60px;
-    border-radius: 25px;
-    display: block;
-    width: max-content;
-}
-.btn-close {
-    filter: invert(1);
-}
-.team-members-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap
-}
-.member-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 15px 20px 30px;
-    border-radius: 25px;
-    max-width: 30%;
-    background-color: #281549;
-    color: #ffffff;
-}
-.member-card h3{
-    font-weight: 600;
-}
-.team-members .image-container {
-    border-radius: 50%;
 
-}
-.team-members > .team-members-content > .member-card > .image-container > img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.team-members {
-    margin-bottom: 150px;
-    margin-top: 100px;
-}
-.about-banner{
-    background-color: #281549;
-    color: #ffffff;
-    font-weight: 800;
-    padding: 50px 0 75px;
-}
-.who, .mission{
-    background-color: #281549;
-    color: #ffffff;
-    padding: 75px 0 0;
-}
-.mission{
-    padding-bottom: 75px;
-}
-.who h2,
-.mission h2{
-    font-weight: 800;
-    text-align: center;
-}
-.mission-content,
-.who-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.who-text{
-    padding-right: 75px;
-}
-.who-content > div{
-    width: 50%;
-}
-.who-image {
-    display: flex;
-    justify-content: center;
-}
-.who-image img{
-    max-width: 595px;
-    height: 595px;
-    object-fit: cover;
-    border-radius: 75px;
-}
-.who, .mission {
-    background-color: #281549;
-    color: #ffffff;
-    padding: 75px 0 0;
-}
-
-.mission {
-    padding-bottom: 75px;
-}
-
-.who h2,
-.mission h2 {
-    font-weight: 800;
-    text-align: center;
-}
-
-.who-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.who-text {
-    padding-right: 75px;
-}
-.mission-text{
-    padding-left: 75px;
-}
-.who-content > div {
-    width: 50%;
-}
-
-/* Image styling with a fixed maximum size that shrinks responsively */
-.who-image img {
-    width: clamp(300px, 50vw, 595px);
-    height: clamp(300px, 50vw, 595px);
-    object-fit: cover;
-    border-radius: 75px;
-}
-
-/* Responsive adjustments for smaller screens */
 @media (max-width: 992px) {
     .mission{
         padding-top: 30px;
@@ -470,6 +457,57 @@ aside{
         margin-bottom: 20px;
     }
     .who-image img {
-        border-radius: 50px; /* Optionally adjust border radius on smaller screens */
+        border-radius: 50px;
     }
+}
+
+
+
+.contact {
+    background-color: #281549;
+    color: #000000;
+    padding: 75px 0 100px;
+}
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.contact-card {
+    background-color: #e1e2e6;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card > .image-container img{
+    width: 62px;
+}
+.contact-info{
+    text-decoration: underline;
+}
+.socials {
+    background-color: #281549;
+    color: #FFFFFF;
+    padding: 75px 0 200px;
+    text-align: center;
+}
+.social-logo{
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+.socials img{
+    width: 52px;
+    height: 100%;
+    text-decoration: none;
 }
