@@ -6,7 +6,6 @@
 }
 body {
     font-family: Arial, sans-serif !important;
-    background-color: #281549 !important;
 }
 .navbar{
     background-color: #281549;
@@ -78,10 +77,58 @@ body {
     color: #ffffff;
 }
 /*------------------------------------------------*/
+.samples{
+
+    background-color: #281549;
+}
+.samples-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.samples .card-sample{
+    max-width: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+.samples .image-container{
+    height: 518px;
+    
+}
+@media (max-width: 1199px) {
+    .samples .image-container {
+      height: calc(100vh - 480px);
+    }
+    .samples{
+        gap: 15px;
+    }
+}
+.samples .image-container img{
+    height: 100%;
+    border-radius: 70px;
+    object-fit: cover;
+}
+.samples .card-title > h5{
+    color: #ffffff !important;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 800;
+}
 
 
 
 
 
-
-
+body.modal-open {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.card-sample .buy-now {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+}

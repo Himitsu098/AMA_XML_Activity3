@@ -5,21 +5,21 @@
     <description>High Grade Universal Century model kit of the iconic RX-78-2 Gundam from Mobile Suit Gundam. Features modern articulation and proportions. Scale 1/144.</description>
     <price>USD 15.00</price>
     <release_year>2015</release_year>
-    <image_url>https://example.com/images/gundam/hguc_rx782_revive.jpg</image_url>
+    <image_url>assets/images/gundam 1.jpg</image_url>
   </gundam_item>
   <gundam_item>
     <title>MG 1/100 MS-06S Zaku II Char Aznable Custom Ver. 2.0</title>
     <description>Master Grade model kit of Char Aznable's custom Zaku II from Mobile Suit Gundam. Features inner frame and detailed mechanics. Scale 1/100.</description>
     <price>USD 55.00</price>
     <release_year>2007</release_year>
-    <image_url>https://example.com/images/gundam/mg_zaku2_char_v2.jpg</image_url>
+    <image_url>assets/images/gundam 2.jpg</image_url>
   </gundam_item>
   <gundam_item>
     <title>RG 1/144 Wing Gundam Zero EW</title>
     <description>Real Grade model kit of the Wing Gundam Zero Custom from Gundam Wing: Endless Waltz. Highly detailed with advanced articulation. Scale 1/144.</description>
     <price>USD 35.00</price>
     <release_year>2014</release_year>
-    <image_url>https://example.com/images/gundam/rg_wing_zero_ew.jpg</image_url>
+    <image_url>assets/images/gundam 3.jpg</image_url>
   </gundam_item>
   <gundam_item>
     <title>MG 1/100 Freedom Gundam Ver. 2.0</title>
