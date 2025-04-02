@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+.julius-sans-one-bold {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: #f8f9fa;
+}
+.navbar{
+    background-color: #281549;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center
+}
+.navbar-brand > h3{
+    margin-bottom: 0;
+}
+.navbar-toggler {
+    border-color: white !important;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.navbar-brand > h3,
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.navbar-brand > img{
+    height: 60px;
+}
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
+    }
+}

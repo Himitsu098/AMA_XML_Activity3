@@ -1,0 +1,15 @@
+<products>
+    <product>
+        <name>Gaming GPU</name>
+        <price>500</price>
+        <year>2023</year>
+        <image>gpu.jpg</image>
+    </product>
+    <product>
+        <name>High-Performance CPU</name>
+        <price>300</price>
+        <year>2022</year>
+        <image>cpu.jpg</image>
+    </product>
+    <!-- Add 18 more products here -->
+</products>
