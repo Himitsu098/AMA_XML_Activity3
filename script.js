@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
         products.forEach(product => {
             let productCard = `
                 <div class='card mb-3'>
-                    <img src='${product.image}' class='card-img-top' alt='${product.name}'>
+                    <img src='${product.image_url}' class='card-img-top' alt='${product.title}'>
                     <div class='card-body'>
-                        <h5 class='card-title'>${product.name}</h5>
-                        <p class='card-text'>Price: $${product.price}</p>
-                        <p class='card-text'>Year: ${product.year}</p>
+                        <h5 class='card-title'>${product.title}</h5>
+                        <p class='card-text'>${product.description}</p>
+                        <p class='card-text'>Price: ${product.price}</p>
+                        <p class='card-text'>Release Year: ${product.release_year}</p>
                     </div>
                 </div>
             `;
@@ -26,15 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
-            let products = data.getElementsByTagName("product");
+            let products = data.getElementsByTagName("gundam_item"); // Use "gundam_item" from your XML
             allProducts = Array.from(products).map(product => ({
-                name: product.getElementsByTagName("name")[0].textContent,
-                price: parseFloat(product.getElementsByTagName("price")[0].textContent),
-                year: parseInt(product.getElementsByTagName("year")[0].textContent),
-                image: product.getElementsByTagName("image")[0].textContent
+                title: product.getElementsByTagName("title")[0]?.textContent || "Unknown",
+                description: product.getElementsByTagName("description")[0]?.textContent || "No description available.",
+                price: product.getElementsByTagName("price")[0]?.textContent || "N/A",
+                release_year: parseInt(product.getElementsByTagName("release_year")[0]?.textContent || "0"),
+                image_url: product.getElementsByTagName("image_url")[0]?.textContent || "no-image.jpg"
             }));
             displayProducts(allProducts);
-        });
+        })
+        .catch(error => console.error("Error loading XML:", error));
 
     function filterProducts() {
         let searchText = searchInput.value.toLowerCase();
@@ -42,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         let selectedYears = Array.from(yearFilters).filter(checkbox => checkbox.checked).map(checkbox => parseInt(checkbox.value));
 
         let filteredProducts = allProducts.filter(product =>
-            product.name.toLowerCase().includes(searchText) &&
-            (selectedYears.length === 0 || selectedYears.includes(product.year))
+            product.title.toLowerCase().includes(searchText) &&
+            (selectedYears.length === 0 || selectedYears.includes(product.release_year))
         );
 
         if (priceOrder === "asc") {
-            filteredProducts.sort((a, b) => a.price - b.price);
+            filteredProducts.sort((a, b) => parseFloat(a.price.replace("USD ", "")) - parseFloat(b.price.replace("USD ", "")));
         } else {
-            filteredProducts.sort((a, b) => b.price - a.price);
+            filteredProducts.sort((a, b) => parseFloat(b.price.replace("USD ", "")) - parseFloat(a.price.replace("USD ", "")));
         }
 
         displayProducts(filteredProducts);

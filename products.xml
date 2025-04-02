@@ -1,15 +1,213 @@
-<products>
-    <product>
-        <name>Gaming GPU</name>
-        <price>500</price>
-        <year>2023</year>
-        <image>gpu.jpg</image>
-    </product>
-    <product>
-        <name>High-Performance CPU</name>
-        <price>300</price>
-        <year>2022</year>
-        <image>cpu.jpg</image>
-    </product>
-    <!-- Add 18 more products here -->
-</products>
+<?xml version="1.0" encoding="UTF-8"?>
+<gundam_collection>
+  <gundam_item>
+    <title>HGUC 1/144 RX-78-2 Gundam (Revive)</title>
+    <description>High Grade Universal Century model kit of the iconic RX-78-2 Gundam from Mobile Suit Gundam. Features modern articulation and proportions. Scale 1/144.</description>
+    <price>USD 15.00</price>
+    <release_year>2015</release_year>
+    <image_url>https://example.com/images/gundam/hguc_rx782_revive.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 MS-06S Zaku II Char Aznable Custom Ver. 2.0</title>
+    <description>Master Grade model kit of Char Aznable's custom Zaku II from Mobile Suit Gundam. Features inner frame and detailed mechanics. Scale 1/100.</description>
+    <price>USD 55.00</price>
+    <release_year>2007</release_year>
+    <image_url>https://example.com/images/gundam/mg_zaku2_char_v2.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 Wing Gundam Zero EW</title>
+    <description>Real Grade model kit of the Wing Gundam Zero Custom from Gundam Wing: Endless Waltz. Highly detailed with advanced articulation. Scale 1/144.</description>
+    <price>USD 35.00</price>
+    <release_year>2014</release_year>
+    <image_url>https://example.com/images/gundam/rg_wing_zero_ew.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Freedom Gundam Ver. 2.0</title>
+    <description>Master Grade kit of the Freedom Gundam from Gundam SEED. Updated Ver. 2.0 with enhanced detail and articulation. Scale 1/100.</description>
+    <price>USD 60.00</price>
+    <release_year>2016</release_year>
+    <image_url>https://example.com/images/gundam/mg_freedom_v2.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>PG 1/60 RX-0 Unicorn Gundam</title>
+    <description>Perfect Grade model kit of the Unicorn Gundam from Gundam Unicorn. Features complex transformation and LED compatibility (sold separately). Scale 1/60.</description>
+    <price>USD 250.00</price>
+    <release_year>2014</release_year>
+    <image_url>https://example.com/images/gundam/pg_unicorn.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HG 1/144 Gundam Barbatos Lupus Rex</title>
+    <description>High Grade model kit of the Gundam Barbatos Lupus Rex from Mobile Suit Gundam: Iron-Blooded Orphans. Features its iconic large mace. Scale 1/144.</description>
+    <price>USD 18.00</price>
+    <release_year>2017</release_year>
+    <image_url>https://example.com/images/gundam/hg_barbatos_lupus_rex.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 Sazabi</title>
+    <description>Real Grade model kit of Char Aznable's Sazabi from Char's Counterattack. Features incredible detail and numerous gimmicks. Scale 1/144.</description>
+    <price>USD 50.00</price>
+    <release_year>2018</release_year>
+    <image_url>https://example.com/images/gundam/rg_sazabi.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 RX-93 Nu Gundam Ver. Ka</title>
+    <description>Master Grade Ver. Ka model kit of Amuro Ray's Nu Gundam from Char's Counterattack. Designed by Hajime Katoki with intricate details and psycho-frame gimmick. Scale 1/100.</description>
+    <price>USD 85.00</price>
+    <release_year>2012</release_year>
+    <image_url>https://example.com/images/gundam/mg_nu_gundam_verka.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HGUC 1/144 Kshatriya</title>
+    <description>High Grade Universal Century model kit of the Kshatriya from Gundam Unicorn. A large HG kit featuring its four binders. Scale 1/144.</description>
+    <price>USD 55.00</price>
+    <release_year>2009</release_year>
+    <image_url>https://example.com/images/gundam/hguc_kshatriya.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Sinanju Stein (Narrative Ver.) Ver. Ka</title>
+    <description>Master Grade Ver. Ka kit of the Sinanju Stein from Gundam Narrative. Features distinctive engravings and weaponry. Scale 1/100.</description>
+    <price>USD 90.00</price>
+    <release_year>2019</release_year>
+    <image_url>https://example.com/images/gundam/mg_sinanju_stein_nt_verka.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 RX-78GP01 Gundam "Zephyranthes"</title>
+    <description>Real Grade model kit of the GP01 Zephyranthes from Gundam 0083: Stardust Memory. Includes core fighter system. Scale 1/144.</description>
+    <price>USD 30.00</price>
+    <release_year>2013</release_year>
+    <image_url>https://example.com/images/gundam/rg_gp01.jpg</image_url>
+  </gundam_item>
+   <gundam_item>
+    <title>HG 1/144 Gundam Aerial</title>
+    <description>High Grade model kit of the Gundam Aerial from Mobile Suit Gundam: The Witch from Mercury. Features bit staves and shield gimmick. Scale 1/144.</description>
+    <price>USD 16.00</price>
+    <release_year>2022</release_year>
+    <image_url>https://example.com/images/gundam/hg_gundam_aerial.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Dynames Gundam</title>
+    <description>Master Grade model kit of the Dynames Gundam from Mobile Suit Gundam 00. Features GN Sniper Rifle and full shield deployment. Scale 1/100.</description>
+    <price>USD 58.00</price>
+    <release_year>2019</release_year>
+    <image_url>https://example.com/images/gundam/mg_dynames.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>SD Gundam Cross Silhouette RX-78-2 Gundam</title>
+    <description>Super Deformed Gundam Cross Silhouette kit of the RX-78-2 Gundam. Can be built with SD or taller CS frame (sold separately). </description>
+    <price>USD 10.00</price>
+    <release_year>2018</release_year>
+    <image_url>https://example.com/images/gundam/sdcs_rx782.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>PG 1/60 Strike Freedom Gundam</title>
+    <description>Perfect Grade model kit of the Strike Freedom Gundam from Gundam SEED Destiny. Features gold-plated inner frame parts and dragoon system. Scale 1/60.</description>
+    <price>USD 300.00</price>
+    <release_year>2010</release_year>
+    <image_url>https://example.com/images/gundam/pg_strike_freedom.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RE/100 1/100 MSN-04 II Nightingale</title>
+    <description>Reborn-One Hundred model kit of the massive Nightingale mobile suit from Char's Counterattack - Beltorchika's Children. Scale 1/100.</description>
+    <price>USD 95.00</price>
+    <release_year>2014</release_year>
+    <image_url>https://example.com/images/gundam/re100_nightingale.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HGUC 1/144 RX-178 Gundam Mk-II (A.E.U.G.) Revive</title>
+    <description>High Grade Universal Century Revive version of the Gundam Mk-II used by the A.E.U.G. in Zeta Gundam. Improved articulation. Scale 1/144.</description>
+    <price>USD 19.00</price>
+    <release_year>2015</release_year>
+    <image_url>https://example.com/images/gundam/hguc_mk2_aeug_revive.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Tallgeese EW</title>
+    <description>Master Grade model kit of the Tallgeese from Gundam Wing: Endless Waltz. Features iconic Dober Gun and verniers. Scale 1/100.</description>
+    <price>USD 50.00</price>
+    <release_year>2013</release_year>
+    <image_url>https://example.com/images/gundam/mg_tallgeese_ew.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 Tallgeese EW</title>
+    <description>Real Grade model kit of the Tallgeese from Gundam Wing: Endless Waltz. Compact size with extreme detail and articulation. Scale 1/144.</description>
+    <price>USD 32.00</price>
+    <release_year>2018</release_year>
+    <image_url>https://example.com/images/gundam/rg_tallgeese_ew.jpg</image_url>
+  </gundam_item>
+   <gundam_item>
+    <title>MGEX 1/100 Strike Freedom Gundam</title>
+    <description>Master Grade Extreme model kit of the Strike Freedom Gundam. Features the most intricate metal-etched frame representation in Gunpla history. Scale 1/100.</description>
+    <price>USD 160.00</price>
+    <release_year>2022</release_year>
+    <image_url>https://example.com/images/gundam/mgex_strike_freedom.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HG 1/144 Penelope</title>
+    <description>High Grade model kit of the Penelope from Mobile Suit Gundam: Hathaway's Flash. Can separate into Flight Unit and Odysseus Gundam. Scale 1/144.</description>
+    <price>USD 75.00</price>
+    <release_year>2019</release_year>
+    <image_url>https://example.com/images/gundam/hg_penelope.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Hyaku-Shiki Ver. 2.0</title>
+    <description>Master Grade model kit of Quattro Bajeena's Hyaku-Shiki from Zeta Gundam. Features brilliant gold coating and updated mechanics. Scale 1/100.</description>
+    <price>USD 80.00</price>
+    <release_year>2015</release_year>
+    <image_url>https://example.com/images/gundam/mg_hyakushiki_v2.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 Crossbone Gundam X1</title>
+    <description>Real Grade model kit of the Crossbone Gundam X1 from Mobile Suit Crossbone Gundam. Features core fighter gimmick and signature weapons. Scale 1/144.</description>
+    <price>USD 30.00</price>
+    <release_year>2019</release_year>
+    <image_url>https://example.com/images/gundam/rg_crossbone_x1.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HG 1/144 Gundam Gusion Rebake Full City</title>
+    <description>High Grade model kit of the Gundam Gusion Rebake Full City from Mobile Suit Gundam: Iron-Blooded Orphans Season 2. Includes large backpack unit. Scale 1/144.</description>
+    <price>USD 16.00</price>
+    <release_year>2016</release_year>
+    <image_url>https://example.com/images/gundam/hg_gusion_rebake_fc.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Providence Gundam</title>
+    <description>Master Grade model kit of the Providence Gundam from Gundam SEED. Features the massive DRAGOON system backpack. Scale 1/100.</description>
+    <price>USD 65.00</price>
+    <release_year>2017</release_year>
+    <image_url>https://example.com/images/gundam/mg_providence.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>PG 1/60 00 Raiser</title>
+    <description>Perfect Grade model kit combining the 00 Gundam and the 0 Raiser support craft from Gundam 00. Features light-up GN Drives. Scale 1/60.</description>
+    <price>USD 280.00</price>
+    <release_year>2009</release_year>
+    <image_url>https://example.com/images/gundam/pg_00_raiser.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 God Gundam</title>
+    <description>Real Grade model kit of the God Gundam from Mobile Fighter G Gundam. Features advanced articulation for martial arts poses. Scale 1/144.</description>
+    <price>USD 40.00</price>
+    <release_year>2022</release_year>
+    <image_url>https://example.com/images/gundam/rg_god_gundam.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>HGUC 1/144 The O</title>
+    <description>High Grade Universal Century model kit of Paptimus Scirocco's The O from Zeta Gundam. A bulky kit with hidden arms. Scale 1/144.</description>
+    <price>USD 28.00</price>
+    <release_year>2010</release_year>
+    <image_url>https://example.com/images/gundam/hguc_the_o.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>MG 1/100 Turn A Gundam</title>
+    <description>Master Grade model kit of the titular mobile suit from Turn A Gundam, designed by Syd Mead. Features unique aesthetics and cow figure. Scale 1/100.</description>
+    <price>USD 50.00</price>
+    <release_year>2007</release_year>
+    <image_url>https://example.com/images/gundam/mg_turn_a.jpg</image_url>
+  </gundam_item>
+  <gundam_item>
+    <title>RG 1/144 Zeong</title>
+    <description>Real Grade model kit of the Zeong mobile suit from Mobile Suit Gundam. Features detailed frame and detachable forearms. Scale 1/144.</description>
+    <price>USD 60.00</price>
+    <release_year>2021</release_year>
+    <image_url>https://example.com/images/gundam/rg_zeong.jpg</image_url>
+  </gundam_item>
+</gundam_collection>
