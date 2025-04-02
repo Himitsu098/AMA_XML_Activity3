@@ -159,28 +159,112 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  footer a {
+}
+footer a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
-  }
+}
 
-  footer a:hover {
+footer a:hover {
     text-decoration: underline;
-  }
+}
 
-  .copyright {
+.copyright {
     display: flex;
     align-items: center;
     justify-content: center;
     
-  }
-  .copyright img {
+}
+.copyright img {
     height: 20px; /* Adjust as needed */
     margin-right: 5px;
     border-radius: 50%;
     background-color: #ffffff;
+}
+
+.product-card {
+    cursor: pointer;
+    overflow: hidden; /* Ensure images are contained within their cards */
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card .image-container img {
+    height: 470px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure aspect ratio is preserved */
+}
+@media (max-width: 1199px) {
+    .product-card .image-container {
+        height: calc(33.57vw); /* 470 / 1200 * 100 */
+    }
+    .product-card .image-container img{
+        height: calc(33.57vw); 
+    }
   }
- 
+.card-title h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    height: 50px; /* Ensure title has consistent height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-title p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.product-card .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1; /* Allow it to grow and take remaining space */
+    min-height: 100px;
+}
+
+/* Ensure Price and Release Year are aligned at the same height */
+.product-card p {
+    margin: 5px 0;
+}
+
+#product-list .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Optional: Add some spacing between product cards */
+.product-card {
+    margin-bottom: 15px;
+}
+
+/* Bootstrap grid for 3 items per row */
+.product-card p {
+    padding-left: 15px; 
+}
+aside{
+    min-height: 1000px;
+}
+.modal-dialog{
+    min-width: 768px;
+    color: #ffffff;
+    
+}
+.modal-content{
+    background-color: #281549 !important;
+}
+.modal-product{
+    display: flex;
+    flex-direction: row;
+}
