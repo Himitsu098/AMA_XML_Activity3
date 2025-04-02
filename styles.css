@@ -370,3 +370,106 @@ aside{
     font-weight: 800;
     padding: 50px 0 75px;
 }
+.who, .mission{
+    background-color: #281549;
+    color: #ffffff;
+    padding: 75px 0 0;
+}
+.mission{
+    padding-bottom: 75px;
+}
+.who h2,
+.mission h2{
+    font-weight: 800;
+    text-align: center;
+}
+.mission-content,
+.who-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.who-text{
+    padding-right: 75px;
+}
+.who-content > div{
+    width: 50%;
+}
+.who-image {
+    display: flex;
+    justify-content: center;
+}
+.who-image img{
+    max-width: 595px;
+    height: 595px;
+    object-fit: cover;
+    border-radius: 75px;
+}
+.who, .mission {
+    background-color: #281549;
+    color: #ffffff;
+    padding: 75px 0 0;
+}
+
+.mission {
+    padding-bottom: 75px;
+}
+
+.who h2,
+.mission h2 {
+    font-weight: 800;
+    text-align: center;
+}
+
+.who-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.who-text {
+    padding-right: 75px;
+}
+.mission-text{
+    padding-left: 75px;
+}
+.who-content > div {
+    width: 50%;
+}
+
+/* Image styling with a fixed maximum size that shrinks responsively */
+.who-image img {
+    width: clamp(300px, 50vw, 595px);
+    height: clamp(300px, 50vw, 595px);
+    object-fit: cover;
+    border-radius: 75px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    .mission{
+        padding-top: 30px;
+    }
+    .who-content {
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .mission-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .mission-content > div,
+    .who-content > div {
+        width: 100%;
+        padding: 30px 0 0;
+    }
+    .who-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .who-image img {
+        border-radius: 50px; /* Optionally adjust border radius on smaller screens */
+    }
+}
