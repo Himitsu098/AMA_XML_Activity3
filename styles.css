@@ -87,7 +87,6 @@ body {
     display: flex;
     flex-direction: row;
 }
-
 .samples .card-sample{
     max-width: 363px;
     display: flex;
@@ -148,8 +147,6 @@ body.modal-open {
     transform: translateY(-3px); /* Slight upward movement */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
-
-
 footer {
     background-color: #1A1A33; /* Dark purple background */
     color: white;
@@ -166,11 +163,9 @@ footer a {
     margin: 0 15px;
     font-size: 16px;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
-
 .copyright {
     display: flex;
     align-items: center;
@@ -183,7 +178,6 @@ footer a:hover {
     border-radius: 50%;
     background-color: #ffffff;
 }
-
 .product-card {
     cursor: pointer;
     overflow: hidden; /* Ensure images are contained within their cards */
@@ -194,7 +188,6 @@ footer a:hover {
     flex-direction: column;
     height: 100%;
 }
-
 .product-card .image-container img {
     height: 470px; /* Fixed height for uniformity */
     object-fit: cover; /* Ensure aspect ratio is preserved */
@@ -206,7 +199,7 @@ footer a:hover {
     .product-card .image-container img{
         height: calc(33.57vw); 
     }
-  }
+}
 .card-title h5 {
     text-align: center;
     font-size: 18px;
@@ -215,14 +208,12 @@ footer a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .card-title p {
     font-size: 14px;
     color: #333;
     text-align: center;
     margin: 5px 0;
 }
-
 .product-card .card-title {
     display: flex;
     flex-direction: column;
@@ -232,23 +223,19 @@ footer a:hover {
     flex-grow: 1; /* Allow it to grow and take remaining space */
     min-height: 100px;
 }
-
 /* Ensure Price and Release Year are aligned at the same height */
 .product-card p {
     margin: 5px 0;
 }
-
 #product-list .col-md-4 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-
 /* Optional: Add some spacing between product cards */
 .product-card {
     margin-bottom: 15px;
 }
-
 /* Bootstrap grid for 3 items per row */
 .product-card p {
     padding-left: 15px; 
@@ -268,3 +255,57 @@ aside{
     display: flex;
     flex-direction: row;
 }
+
+/* ================= Responsive Enhancements ================= */
+
+/* Breakpoint for screens <= 1200px */
+@media (max-width: 1200px) {
+    .modal-dialog {
+        max-width: 80%;
+        min-width: unset;
+    }
+}
+
+/* Breakpoint for screens <= 992px */
+@media (max-width: 992px) {
+    .modal-dialog {
+        max-width: 90%;
+    }
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Breakpoint for screens <= 768px */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .catalog-container {
+        grid-template-columns: 1fr;
+    }
+    .modal-dialog {
+        max-width: 95%;
+    }
+    .product-card{
+        width: 100%;
+    }
+    .image-container,
+    .image-container img{
+        min-height: 470px;
+    }
+}
+.modal-product a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #cf0d4e;
+    font-weight: 800;
+    font-size: 26px;
+    padding: 12px 60px;
+    border-radius: 25px;
+    display: block;
+    width: max-content;
+}
+.btn-close {
+    filter: invert(1);
+  }

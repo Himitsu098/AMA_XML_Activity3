@@ -125,7 +125,7 @@ function viewProductDetails(product) {
                 <p><strong>Price:</strong> $${product.price.toFixed(2)}</p>
                 <p><strong>Description:</strong></p>
                 <p>${product.description}</p>
-                <a href="https://www.google.com/search?hl=en&tbm=shop&q=${encodeURIComponent(product.title)}" target="_blank" class="btn btn-primary mt-3">Buy Now</a>
+                <a href="https://www.google.com/search?hl=en&tbm=shop&q=${encodeURIComponent(product.title)}" target="_blank" class="mt-3">Buy Now</a>
             </div>
             <img src="${product.image_url}" class="img-fluid" alt="${product.title}" style="max-height: 300px;">
         </div>
