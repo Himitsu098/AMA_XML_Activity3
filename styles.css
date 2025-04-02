@@ -40,3 +40,17 @@ body {
         justify-content: flex-end;
     }
 }
+/*------------------------------------------------*/
+.background-container{
+    max-height: 768px;
+    display: flex;
+    flex-direction: row;
+}
+.background-container > img{
+    width: 80%;
+    object-fit: cover;
+}
+.background-container > video{
+    width: 20%;
+    object-fit: cover;
+}
